@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rdd-5Y-oZx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lab2-->
+        <scene sceneID="ehL-QQ-zev">
+            <objects>
+                <viewController id="4sr-gw-7D5" customClass="DrawingViewController" customModule="LabWork1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5zM-xe-jBX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mXU-BD-ple"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Lab2" image="pencil" catalog="system" id="6qC-l9-VzT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uVs-op-p0u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="261" y="-581"/>
+        </scene>
+        <!--Первое окно-->
+        <scene sceneID="3J0-BP-eLO">
+            <objects>
+                <viewController id="88u-ZB-6Hf" customClass="ViewController" customModule="LabWork1_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="h0M-Bo-Kjb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="diw-rf-qce">
+                                <rect key="frame" x="129.5" y="417.5" width="155" height="61"/>
+                                <string key="text">Чорноморець Влад
+Група IВ-83
+ЗК IВ-8328</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XGx-JH-sKU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="diw-rf-qce" firstAttribute="centerY" secondItem="h0M-Bo-Kjb" secondAttribute="centerY" id="loT-2Z-jMr"/>
+                            <constraint firstItem="diw-rf-qce" firstAttribute="centerX" secondItem="h0M-Bo-Kjb" secondAttribute="centerX" id="zpM-Aq-cxR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Первое окно" image="square.and.arrow.up.on.square" catalog="system" id="O6J-Rz-PCu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cDx-K2-gbd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="260.86956521739131" y="136.60714285714286"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3Yf-R1-AG0">
+            <objects>
+                <tabBarController id="rdd-5Y-oZx" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VZC-xw-NpT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="88u-ZB-6Hf" kind="relationship" relationship="viewControllers" id="PzQ-uI-lVY"/>
+                        <segue destination="4sr-gw-7D5" kind="relationship" relationship="viewControllers" id="zna-T4-g26"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zzf-Et-6Fa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-845" y="-238"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pencil" catalog="system" width="32" height="32"/>
+        <image name="square.and.arrow.up.on.square" catalog="system" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
